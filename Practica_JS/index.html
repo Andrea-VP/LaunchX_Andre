@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Practica_JS/style.css">
+    <title>Pokerepo</title>
+</head>
+<body>
+    <header>
+        <h1>Pokerepo</h1>
+    </header>
+    <section>
+        <div class="pokeDisplay">
+            <span class="pokeNumber"></span>
+            <img src="./pokeball.png" alt="Pokemon" id="pokeImg" class="pokeimg">
+            <div class="pokeSearch">
+                <label id="namePoke">nombre</label>
+                <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
+                <button onclick="fetchPokemon()">Find</button>
+            </div>
+            <div class="pokeInfo">
+                <p class="pokeType"></p>
+                <p class="pokeMvs"></p>
+                <table class="pokeStats">
+                    <tr>
+                        <td id="hp"></td>
+                        <td id="atk"></td>
+                        <td id="def"></td>
+                        <td id="spatk"></td>
+                        <td id="spdef"></td>
+                        <td id="speed"></td>
+                    </tr>
+                    <tr>
+                        <td>HP</td>
+                        <td>ATK</td>
+                        <td>DEF</td>
+                        <td>SP.ATK</td>
+                        <td>SP.DEF</td>
+                        <td>SPEED</td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+        <img id="pokedex" src="./src/pokedex.png" alt="Pokedex">
+    </section>
+    <footer>
+        <script src="/Practica_JS/poke_repo.js"></script>
+        <script src="./4.-pokedex.js"></script>
+    </footer>
+</body>
+</html>
